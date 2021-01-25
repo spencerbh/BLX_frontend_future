@@ -1,3 +1,21 @@
 {
+  "CUSTOM_TYPES": {
+    "Address": "AccountId",
+    "LookupSource": "AccountId",
+    "Name": "[u8;32]",
+    "ApnToken": {
+      "super_apn": "u32",
+      "agency_name": "Vec<u8>"
+    },
+    "Source": {
+      "_enum": {
+        "Id": "AccountId",
+        "Index": "AccountIndex",
+        "Raw": "Vec<u8>",
+        "Address32": "[u8;32]",
+        "Address20": "[u8;20]"
+      }
+    }
+  },
   "PROVIDER_SOCKET": "ws://127.0.0.1:9944"
 }
